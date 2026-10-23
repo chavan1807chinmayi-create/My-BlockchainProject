@@ -1,0 +1,39 @@
+{
+  "name": "blockcert",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "e2e": "esbuild scripts/e2e.ts --bundle --platform=node --format=cjs --outfile=.e2e.cjs --log-level=error && node .e2e.cjs",
+    "setup": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1"
+  },
+  "dependencies": {
+    "ethers": "6.13.4",
+    "jspdf": "2.5.2",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "2.0.8",
+    "@nomicfoundation/hardhat-ethers": "3.0.8",
+    "@nomicfoundation/hardhat-network-helpers": "1.0.12",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "autoprefixer": "10.4.20",
+    "chai": "4.5.0",
+    "hardhat": "2.22.15",
+    "postcss": "8.4.49",
+    "solc": "0.8.24",
+    "tailwindcss": "3.4.15",
+    "typescript": "5.6.3",
+    "vite": "5.4.11"
+  }
+}
